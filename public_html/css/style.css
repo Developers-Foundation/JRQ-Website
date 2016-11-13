@@ -1,0 +1,98 @@
+/* 
+* Japanese Relations At Queen's CSS 
+*/
+
+/* Whole Page Styling */
+
+html {
+    height: 100%;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	overflow-x: hidden;
+}
+
+footer {
+	min-height: 40px;
+	color: white;
+	background-color: #101010;
+}
+
+h1 {
+	font-family: 'Six Caps', serif;
+	font-size: 5em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    max-width: 400px;
+}
+
+
+
+/* Section Based Styling */
+
+#landing {
+	background: url('../img/bg2.jpg') no-repeat center center fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#events {
+	background: url('../img/bg3.jpg') no-repeat center fixed;
+}
+
+#landing, #events {
+	width: 100%;
+	min-height: 60em;
+	position: relative;
+}
+
+div#landing h1 {
+	color:#FFFFFF;
+	font-family: 'Six Caps', sans-serif;
+	font-size: 10em;
+	margin: 0;
+	text-align: center;
+}
+
+#landing hr {
+	max-width: 800px;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.off-colour {
+	color:#BBD4DB;
+}
+
+#about, #events, #contact {
+	padding: 20px;
+	background-color:#FFFFFF;
+	font-color: black;
+	min-height: 600px;
+}
+
+/* Navigation Bar Styling */
+
+.navbar {
+	background: #FFFFFF;
+	min-height: 75px;
+}
+
+.navbar-toggle {
+	padding:20px;
+}
+
+.navbar-brand {
+	font-family: 'Six Caps', sans-serif;
+	font-size: 50px;
+	padding: 30px;
+}
+
+.nav {
+	padding: 10px;
+}
