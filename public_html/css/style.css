@@ -48,7 +48,7 @@ hr {
 
 #landing, #events {
 	width: 100%;
-	min-height: 60em;
+	height:100vh;
 	position: relative;
 }
 
@@ -69,10 +69,13 @@ div#landing h1 {
 	color:#BBD4DB;
 }
 
-#about, #events, #contact {
+#about, #contact, #events {
 	padding: 20px;
 	background-color:#FFFFFF;
 	font-color: black;
+}
+
+#about, #contact {
 	min-height: 600px;
 }
 
@@ -80,7 +83,7 @@ div#landing h1 {
 
 .navbar {
 	background: #FFFFFF;
-	min-height: 75px;
+	max-height: 75px;
 }
 
 .navbar-toggle {
@@ -95,4 +98,30 @@ div#landing h1 {
 
 .nav {
 	padding: 10px;
+}
+
+/* Navigation Anchor Off-Set Fix */
+
+.anchor {
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
+/* Media Queries */
+
+@media (max-height: 700px) {
+	
+	body {
+		padding-top: 40px;
+	}
+
+	div#landing h1 {
+		font-size: 6em;
+	}
+
+	#about, #contact {
+		min-height: 100vh;
+	}
 }
