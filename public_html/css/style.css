@@ -10,6 +10,8 @@ html {
 
 body {
 	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	position: relative;
 	overflow-x: hidden;
 }
 
@@ -31,22 +33,22 @@ hr {
     max-width: 400px;
 }
 
+/* Image Scaling */
 
+#logo {
+	float: left;
+}
 
 /* Section Based Styling */
 
 #landing {
-	background: url('../img/bg2.jpg') no-repeat center center fixed;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-#events {
-	background: url('../img/bg3.jpg') no-repeat center fixed;
-}
 
-#landing, #events {
+#landing {
 	width: 100%;
 	height:100vh;
 	position: relative;
@@ -60,7 +62,7 @@ div#landing h1 {
 	text-align: center;
 }
 
-#landing hr {
+#events hr, #landing hr {
 	max-width: 800px;
 	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
@@ -69,7 +71,7 @@ div#landing h1 {
 	color:#BBD4DB;
 }
 
-#about, #contact, #events {
+#about, #contact {
 	padding: 20px;
 	background-color:#FFFFFF;
 	font-color: black;
@@ -79,11 +81,19 @@ div#landing h1 {
 	min-height: 600px;
 }
 
+div#events h1{
+	color: #FFFFFF;
+}
+
 /* Navigation Bar Styling */
+
+.collapsed-navbar {
+	background-color: transparent;
+}
 
 .navbar {
 	background: #FFFFFF;
-	max-height: 75px;
+	min-height: 75px;
 }
 
 .navbar-toggle {
@@ -92,12 +102,19 @@ div#landing h1 {
 
 .navbar-brand {
 	font-family: 'Six Caps', sans-serif;
+	float: left;
 	font-size: 50px;
 	padding: 30px;
 }
 
 .nav {
 	padding: 10px;
+	padding-top: 12px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #FFFFFF;
+  text-decoration: none;
 }
 
 /* Navigation Anchor Off-Set Fix */
@@ -108,6 +125,50 @@ div#landing h1 {
   margin-top: -75px;
   visibility: hidden;
 }
+
+/* Parallax Scroll Properties */
+
+.parallax-window {
+    min-height: 100vh;
+    background: transparent;
+}
+
+/* Hover.css Underline CSS */
+
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+
+
 
 /* Media Queries */
 
