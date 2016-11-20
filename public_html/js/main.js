@@ -14,9 +14,6 @@
       });
   });
 
-$(window).scroll(collapseNavbar);
-$(document).ready(collapseNavbar);
-
 // Mobile Menu Retracts After Clicking Link
 $('.navbar-collapse ul li a').click(function() {
   if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
