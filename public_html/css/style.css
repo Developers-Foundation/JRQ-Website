@@ -33,10 +33,16 @@ hr {
     max-width: 400px;
 }
 
-/* Image Scaling */
+/* Logo Scaling */
 
-#logo {
+.brand {
 	float: left;
+	left:0;
+	top:0;
+	max-height: 200px;
+	max-width: 200px;
+	border-radius: 25%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Section Based Styling */
@@ -60,6 +66,7 @@ div#landing h1 {
 	font-size: 10em;
 	margin: 0;
 	text-align: center;
+	text-shadow: 1px 2px 30px #050505;
 }
 
 #events hr, #landing hr {
@@ -78,7 +85,12 @@ div#landing h1 {
 }
 
 #about, #contact {
-	min-height: 600px;
+	min-height: 500px;
+}
+
+#about p {
+	padding-top:50px;
+	font-size: 1.5em
 }
 
 div#events h1{
@@ -101,10 +113,7 @@ div#events h1{
 }
 
 .navbar-brand {
-	font-family: 'Six Caps', sans-serif;
 	float: left;
-	font-size: 50px;
-	padding: 30px;
 }
 
 .nav {
@@ -115,6 +124,10 @@ div#events h1{
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: #FFFFFF;
   text-decoration: none;
+}
+
+.nav-link {
+	padding:0;
 }
 
 /* Navigation Anchor Off-Set Fix */
@@ -167,15 +180,17 @@ div#events h1{
   transform: translateY(0);
 }
 
-
-
+/* Contact Icon CSS */
+#icon-section {
+	padding-top:50px;
+}
 
 /* Media Queries */
 
 @media (max-height: 700px) {
 	
 	body {
-		padding-top: 40px;
+		padding-top: 30px;
 	}
 
 	div#landing h1 {
@@ -184,5 +199,17 @@ div#events h1{
 
 	#about, #contact {
 		min-height: 100vh;
+	}
+
+	#about p {
+		font-size: 1.2em;
+	}
+
+	.brand {
+		max-height: 100px;
+		max-width: 100px;
+		border-radius: 10%;
+		float: none;
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.19);
 	}
 }
