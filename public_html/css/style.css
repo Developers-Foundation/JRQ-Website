@@ -9,7 +9,7 @@ html {
 }
 
 body {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	position: relative;
 	overflow-x: hidden;
@@ -31,6 +31,11 @@ hr {
     height: 1px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     max-width: 400px;
+}
+
+.row {
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 /* Logo Scaling */
@@ -60,6 +65,15 @@ hr {
 	position: relative;
 }
 
+div#landing h2{ 
+    color:#FFFFFF;
+	font-family: 'Six Caps', sans-serif;
+	font-size: 5em;
+	margin: 0;
+	text-align: center;
+	text-shadow: 1px 2px 30px #050505;
+}
+
 div#landing h1 {
 	color:#FFFFFF;
 	font-family: 'Six Caps', sans-serif;
@@ -69,7 +83,7 @@ div#landing h1 {
 	text-shadow: 1px 2px 30px #050505;
 }
 
-#events hr, #landing hr {
+#events hr, #landing hr{
 	max-width: 800px;
 	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
@@ -86,6 +100,8 @@ div#landing h1 {
 
 #about, #contact {
 	min-height: 500px;
+	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
 }
 
 #about p {
@@ -95,6 +111,42 @@ div#landing h1 {
 
 div#events h1{
 	color: #FFFFFF;
+	margin: 0;
+	text-align: center;
+	text-shadow: 1px 2px 30px #050505;
+	padding-top: 40px;
+}
+
+#events {
+	min-height: 500px;
+}
+
+/* Info Box Section Styling */
+
+.inner {
+	background-color:white;
+	padding: 10px;
+	border: 1px solid #EEE;
+	min-height: 250px;
+	border-radius: 2%;
+	-webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.inner:hover {
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+.info-box hr {
+	border: 0;
+    height: 1px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)) !important;
+    max-width: 50px !important;
+}
+
+.info-section {
+	padding-top: 30px;
+	padding-bottom: 50px;
 }
 
 /* Navigation Bar Styling */
@@ -185,6 +237,24 @@ div#events h1{
 	padding-top:50px;
 }
 
+#contact a:link,
+#contact a:visited {
+  color: #007BB6;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  transition:color .2s ease-out, background 1s ease-in;
+}
+
+#contact a:active {
+	color: #3b5998;
+}
+
+#contact a:hover {
+  color: #3b5998;
+}
+
 /* Media Queries */
 
 @media (max-height: 700px) {
@@ -197,7 +267,7 @@ div#events h1{
 		font-size: 6em;
 	}
 
-	#about, #contact {
+	#about, #events {
 		min-height: 100vh;
 	}
 
