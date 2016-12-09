@@ -22,7 +22,7 @@ footer {
 }
 
 h1 {
-	font-family: 'Six Caps', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 4em;
 }
 
@@ -31,6 +31,11 @@ hr {
     height: 1px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     max-width: 400px;
+}
+
+.parallax-mirror {
+    -webkit-filter: opacity(50%); /* Safari */
+    filter: opacity(50%);
 }
 
 .row {
@@ -102,9 +107,14 @@ div#landing h1 {
 	min-height: 500px;
 }
 
-#about p {
-	padding-top:30px;
+.summary {
+	padding:30px;
 	font-size: 1.3em
+}
+
+.about-text {
+	font-size: 1.2em;
+	padding-top: 50px;
 }
 
 div#events h1{
@@ -124,7 +134,7 @@ div#events h1{
 .inner {
 	background-color:white;
 	padding: 10px;
-	border: 1px solid #EEE;
+	border: 3px double #BBD4DB;
 	min-height: 250px;
 	border-radius: 2%;
 	-webkit-transition: 0.3s;
@@ -234,8 +244,10 @@ div#events h1{
 /* Image Hovers (Mike Tricking) CSS */
 
 .hovereffect {
-  width: 100%;
-  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  max-width: 400px;
+  max-height: 250px;
   float: left;
   overflow: hidden;
   position: relative;
@@ -315,6 +327,13 @@ div#events h1{
 
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
+}
+
+/* Gallery Boxes */
+
+.gallery-preview {
+	min-width:100%;
+	min-height:100%;
 }
 
 /* Contact Icon CSS */
