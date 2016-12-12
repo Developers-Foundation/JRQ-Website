@@ -9,7 +9,7 @@ html {
 }
 
 body {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	position: relative;
 	overflow-x: hidden;
@@ -23,7 +23,7 @@ footer {
 
 h1 {
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 4em;
+	font-size: 3em;
 }
 
 hr {
@@ -32,6 +32,8 @@ hr {
     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     max-width: 400px;
 }
+
+
 
 .parallax-mirror {
 
@@ -108,13 +110,15 @@ div#landing h1 {
 	font-color: black;
 }
 
-#about, #contact {
+#about {
 	min-height: 500px;
 }
 
+#contact {
+	min-height:420px;
+}
+
 .summary {
-	padding:30px;
-	padding-bottom: 20px;
 	font-size: 1.3em
 }
 
@@ -260,7 +264,6 @@ div#events h1{
   position: relative;
   text-align: center;
   cursor: default;
-  border: solid 1px #000;
   border-radius: 1%;
 }
 
@@ -347,7 +350,7 @@ div#events h1{
 
 /* Contact Icon CSS */
 #icon-section {
-	padding-top:50px;
+	padding-top:10px;
 }
 
 #contact a:link,
