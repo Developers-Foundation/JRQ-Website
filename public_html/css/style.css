@@ -49,8 +49,8 @@ ul {
 	float: left;
 	left:0;
 	top:0;
-	max-height: 200px;
-	max-width: 200px;
+	max-height: 150px;
+	max-width: 150px;
 	border-radius: 25%;
 	-webkit-transition: 0.3s;
     transition: 0.3s;
@@ -100,7 +100,7 @@ div#landing h1 {
 }
 
 .off-colour {
-	color:#BBD4DB;
+	color:#A9BCF7;
 }
 
 #about, #contact{
