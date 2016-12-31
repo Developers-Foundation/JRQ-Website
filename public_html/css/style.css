@@ -199,7 +199,7 @@ div#events h1{
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: #FFFFFF;
+  background-color: rgba(0,0,0,0);
   text-decoration: none;
 }
 
@@ -358,6 +358,10 @@ div#events h1{
 	padding-top:10px;
 }
 
+#icon-section h2 {
+  font-size: 1.5em;
+}
+
 #contact a:link,
 #contact a:visited {
   color: #007BB6;
@@ -403,4 +407,13 @@ div#events h1{
 		float: none;
 		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.19);
 	}
+}
+
+@media (max-width: 990px) {
+  .info-box {
+    padding-bottom: 10px;
+  }
+  .external-link { 
+    padding-bottom: 10px;
+  }
 }
