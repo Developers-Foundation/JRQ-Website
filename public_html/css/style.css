@@ -382,38 +382,45 @@ div#events h1{
 
 /* Media Queries */
 
-@media (max-height: 700px) {
-	
-	body {
-		padding-top: 40px;
-	}
-
-	div#landing h1 {
-		font-size: 6em;
-	}
-
-	#about, #events {
-		min-height: 100vh;
-	}
-
-	#about p {
-		font-size: 1.2em;
-	}
-
-	.brand {
-		max-height: 100px;
-		max-width: 100px;
-		border-radius: 10%;
-		float: none;
-		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.19);
-	}
-}
-
 @media (max-width: 990px) {
   .info-box {
     padding-bottom: 10px;
   }
   .external-link { 
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    padding-top: 40px;
+  }
+
+  h1 {
+    font-size:2em;
+  }
+
+  div#landing h1 {
+    font-size: 4em;
+  }
+
+  div#landing h2 {
+    font-size: 3em;
+  }
+
+  #about, #events {
+    min-height: 100vh;
+  }
+
+  #about p {
+    font-size: 1em;
+  }
+
+  .brand {
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 10%;
+    float: none;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.19);
   }
 }
