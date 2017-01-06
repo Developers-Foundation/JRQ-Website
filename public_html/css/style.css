@@ -145,6 +145,10 @@ div#events h1{
 	color:#FFF;
 }
 
+#extra-header{
+  padding: none;
+}
+
 /* Info Box Section Styling */
 
 .inner {
