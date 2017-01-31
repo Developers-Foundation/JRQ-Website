@@ -241,6 +241,16 @@
         new WOW().init();
     </script>
 
+<!-- Mobile Height -->
+	<script>
+		var bg = $("#landing, #about, #event, $contact");
+		function resizeBackground() {
+    		bg.height($(window).height());
+		}
+		$(window).resize(resizeBackground);
+		resizeBackground();
+	</script>
+
 <!-- Load Main Page JavaScript -->
     <script src="./js/main.js"></script>
 

@@ -444,7 +444,7 @@ div#events h1{
   }
 
   .hovereffect {
-    height:150px;
+    height:170px;
   }
 
   .hovereffect a.info {
@@ -455,15 +455,15 @@ div#events h1{
   .hovereffect h2 {
     font-size: 14px;
     padding: 10px;
-    -webkit-transform: translateY(60px);
-    -ms-transform: translateY(60px);
-    transform: translateY(60px);
+    -webkit-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    transform: translateY(40px);
   }
 
   .hovereffect:hover h2 {
-    -webkit-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    transform: translateY(-15px);
+    -webkit-transform: translateY(-16px);
+    -ms-transform: translateY(-16px);
+    transform: translateY(-16px);
   }
 
   #landing {
