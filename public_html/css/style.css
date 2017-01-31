@@ -416,13 +416,21 @@ div#events h1{
     min-height: 100vh;
   }
 
+  #about, #contact{
+    padding: 5px;
+  }
+
   #about p {
     font-size: 1em;
   }
 
+  .navbar-brand {
+    padding:10px;
+  }
+
   .brand {
-    max-height: 100px;
-    max-width: 100px;
+    height: auto;
+    width: 40%;
     border-radius: 10%;
     float: none;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.19);
