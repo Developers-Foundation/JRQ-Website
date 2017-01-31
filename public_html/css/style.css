@@ -435,5 +435,7 @@ div#events h1{
     float: none;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.19);
   }
-
+  #landing {
+    height: 500px;
+  }
 }
