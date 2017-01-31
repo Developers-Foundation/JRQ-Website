@@ -465,15 +465,4 @@ div#events h1{
     -ms-transform: translateY(-16px);
     transform: translateY(-16px);
   }
-
-  #landing {
-    height: auto;
-    background:fixed;
-  }
-
-  #events {
-    height: auto;
-    background: fixed;
-    background-color: rgba(0,0,0,0.5);
-  }
 }
