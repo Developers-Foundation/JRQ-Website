@@ -416,8 +416,12 @@ div#events h1{
     min-height: 100vh;
   }
 
-  #about, #contact{
+  #about, #contact, #events{
     padding: 5px;
+  }
+
+  #contact {
+    font-size: 13px;
   }
 
   #about p {
@@ -435,7 +439,41 @@ div#events h1{
     float: none;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.19);
   }
+
+  .divider {
+  }
+
+  .hovereffect {
+    height:150px;
+  }
+
+  .hovereffect a.info {
+    padding: 14px 50px;
+    padding: 20px;
+  }
+
+  .hovereffect h2 {
+    font-size: 14px;
+    padding: 10px;
+    -webkit-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+
+  .hovereffect:hover h2 {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+
   #landing {
-    height: 500px;
+    height: auto;
+    background:fixed;
+  }
+
+  #events {
+    height: auto;
+    background: fixed;
+    background-color: rgba(0,0,0,0.5);
   }
 }
