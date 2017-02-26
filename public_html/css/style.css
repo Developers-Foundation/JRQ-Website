@@ -54,8 +54,8 @@ ul {
 	max-width: 150px;
 	border-radius: 25%;
 	-webkit-transition: 0.3s;
-    transition: 0.3s;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.19);
 }
 
 .brand:hover {
@@ -78,7 +78,7 @@ ul {
 }
 
 div#landing h2{ 
-    color:#FFFFFF;
+  color:#FFFFFF;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 5em;
 	margin: 0;
@@ -95,7 +95,7 @@ div#landing h1 {
 	text-shadow: 1px 2px 30px #050505;
 }
 
-#landing hr, #events hr{
+#landing hr, #events hr, #contact hr{
 	max-width: 800px;
 	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
@@ -104,7 +104,7 @@ div#landing h1 {
 	color:#A9BCF7;
 }
 
-#about, #contact{
+#about, #next-event {
 	padding: 20px;
 	background-color:#FFFFFF;
 	font-color: black;
@@ -112,6 +112,8 @@ div#landing h1 {
 
 #about {
 	min-height: 500px;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+  border: 3px double #BBD4DB;
 }
 
 #contact {
@@ -128,7 +130,7 @@ div#landing h1 {
 	padding-top: 50px;
 }
 
-div#events h1{
+#events h1, #contact h1{
 	color: #FFF;
 	margin: 0;
 	text-align: center;
@@ -139,10 +141,15 @@ div#events h1{
 
 #events {
 	min-height: 560px;
-	background-color: rgba(0,0,0,0.5);
 }
 
-.event-info {
+#next-event {
+  min-height: 260px;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+  border: 3px double #BBD4DB;
+}
+
+.event-info, #contact {
 	color:#FFF;
 }
 
@@ -159,7 +166,7 @@ div#events h1{
 	min-height: 250px;
 	border-radius: 2%;
 	-webkit-transition: 0.3s;
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .inner:hover {
@@ -168,9 +175,9 @@ div#events h1{
 
 .info-box hr {
 	border: 0;
-    height: 1px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)) !important;
-    max-width: 50px !important;
+  height: 1px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)) !important;
+  max-width: 50px !important;
 }
 
 .info-section {

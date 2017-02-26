@@ -59,7 +59,7 @@
     </nav>
 
 <!-- Landing -->
-    <div id="landing" class="container-fluid parallax-window wow fadeIn" data-parallax="scroll" data-image-src="img/bg5.jpg">
+    <div id="landing" class="container-fluid parallax-window wow fadeIn" data-parallax="scroll" data-image-src="img/bg55.jpg">
         <div class="row">
             <div class="col-xs-12">
             <hr class="wow fadeInRight" data-wow-delay="0.2s" />
@@ -105,16 +105,57 @@
                         <h3 class="info-title">JRQ Membership</h3>
                         <hr/>
                         <i class="fa fa-credit-card fa-4x" aria-hidden="true"></i>
-                        <p class="about-text">Get discounts on our monthly events and various places in Kingston. Click <a href="#">here</a> for more information.</p>
+                        <p class="about-text">Get discounts on our monthly events and various places in Kingston. Click <a href="" type="button" data-toggle="modal" data-target="#discounts">here</a> for more information.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+<!-- Modal -->
+    <div class="modal fade" id="discounts" tabindex="-1" role="dialog" aria-labelledby="discounts-title" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-center" id="discounts-title">Membership Discounts</h2>
+          </div>
+          <div class="modal-body text-center">
+            <h3>With our JRQ membership, you can enjoy up to 20% off at the following restaurants and shops!</h3>
+            <h4><i>Also, you will get a discount on all of our future events!</i></h4>
+            <hr/>
+            <h3><b>Restaurants</b></h5>
+            <h4><b>20% off</b></h4>
+            <ul>
+                <li>Sushibar Da (cash only, not for special deals)</li>
+            </ul>
+            <h4><b>10% off</b></h4>
+            <ul>
+                <li>Mekong (cash only)</li>
+                <li>I-Tea</li>
+                <li>Take Sushi</li>
+                <li>Golden Viet-Thai (cash only)</li>
+            </ul>
+
+            <h3><b>Shops</b></h3>
+            <h4>KAS</h4>
+            <ul>
+                <li>5% off groceries (cash only)</li>
+                <li>10% off cosmetics (cash only)</li>
+                <li>Free delivery for purchases over $50</li>
+                <li><i>Discount does not apply to homemade (pre-made) food.</i></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 <!-- Events -->
     <span class="anchor" id="events-waypoint"></span>
-    <div id="events" class="container-fluid parallax-window" data-parallax="scroll" data-image-src="img/bg5.png">
+    <div id="events" class="container-fluid parallax-window" data-parallax="scroll" data-image-src="img/bg55.png">
         <div class="row">
             <div class="col-xs-12 text-center wow fadeInUp">
                 <h1> Past Events </h1>
@@ -171,9 +212,21 @@
         </div>
     </div>
 
+<!-- Upcoming Events Section -->
+    <div id="next-event" class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="wow fadeInDown">Upcoming Event!</h1>
+                <hr/>
+                <h2 class="wow fadeInUp"><b>(JRQ x QCSA) Takoyaki/Dumpling Night!</b></h2>
+                <h3 class="wow fadeInUp">March 4th, 2017 : Sutherland Hall (JDUC)</h3>
+            </div>
+        </div>
+    </div>
+
 <!-- Contact Section -->
     <span class="anchor" id="contact-waypoint"></span>
-    <div id="contact" class="container-fluid">
+    <div id="contact" class="container-fluid parallax-window" data-parallax="scroll" data-image-src="img/bg55.png">
         <div class="row">
             <div class="col-xs-12 text-center wow fadeInUp">
                 <h1> Contact Us </h1>
